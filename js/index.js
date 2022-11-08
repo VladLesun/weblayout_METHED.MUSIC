@@ -103,8 +103,8 @@ const likeBtn = document.querySelector('.player__controller-like');
 const muteBtn = document.querySelector('.player__controller-mute');
 const playerProgressInput = document.querySelector('.player__progress-input');
 
-const trackInfoTitle = document.querySelectorAll('.track-info__title')
-const trackInfoArtist = document.querySelectorAll('.track-info__artist')
+const trackInfoTitle = document.querySelector('.track-info__title')
+const trackInfoArtist = document.querySelector('.track-info__artist')
 const playerTimePassed = document.querySelector('.player__time_passed');
 const playerTimeTotal = document.querySelector('.player__time_total');
 const playerVolumeInput = document.querySelector('.player__volume-input');
@@ -160,7 +160,8 @@ const playMusic = (event) => {
         return id === item.id;
     });
     audio.src = track.mp3;
-
+    trackInfoTitle.textContent = track.track;
+    trackInfoArtist.textContent = track.artist;
     audio.play();
 
     pauseBtn.classList.remove('player__controller-play');
@@ -246,6 +247,7 @@ const checkCount = (i = 1) => {
     }
 };
 
+
 const updateTime = () => {
     const duration = audio.duration;
     const currentTime = audio.currentTime;
@@ -265,7 +267,6 @@ const updateTime = () => {
 const init = () => {
     audio.volume = localStorage.getItem('volume') || 1;
     playerVolumeInput.value = audio.volume * 100;
-
 
     renderCatalog(dataMusic);
     checkCount();
