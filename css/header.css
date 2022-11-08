@@ -22,19 +22,33 @@
 }
 
 .header__favorite-btn {
+    display: flex;
     flex-shrink: 0;
     color: #fff;
     line-height: 0;
-    transition: color .3s ease-in-out;
+    transition-property: color, gap;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
-.header__favorite-btn:hover,
-.header__favorite-btn:focus {
+.header__favorite-btn_like:hover,
+.header__favorite-btn_like:focus,
+.header__favorite-btn_exit:hover,
+.header__favorite-btn_exit:focus {
     color: #1E5A32;
+    outline: none;
 }
 
-.header__favorite-btn:active {
+.header__favorite-btn_exit {
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+
+.header__favorite-btn_exit:active {
     color: #16bf4f;
+    gap: 15px;
 }
 
 @media (max-width: 1024px) {

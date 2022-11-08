@@ -38,61 +38,60 @@
     background-repeat: no-repeat;
 }
 
-.player__icon_stop {
+.player__controller-stop {
     background-image: url('../img/player/stop.svg');
 }
 
-.player__icon_stop:hover,
-.player__icon_stop:focus {
+.player__controller-stop:hover,
+.player__controller-stop:focus {
     background-image: url('../img/player/stop-hover.svg');
 }
 
-.player__icon_prev {
+.player__controller-prev {
     background-image: url('../img/player/prev.svg');
 }
 
-.player__icon_prev:hover,
-.player__icon_prev:focus {
+.player__controller-prev:hover,
+.player__controller-prev:focus {
     background-image: url('../img/player/prev-hover.svg');
 }
 
-.player__icon_pause {
+.player__controller-pause {
     background-image: url('../img/player/pause.svg');
 }
 
-.player__icon_pause:hover,
-.player__icon_pause:focus {
+.player__controller-pause:hover,
+.player__controller-pause:focus {
     background-image: url('../img/player/pause-hover.svg');
 }
 
-.player__icon_play {
+.player__controller-play {
     background-image: url('../img/player/play.svg');
 }
 
-.player__icon_play:hover,
-.player__icon_play:focus {
+.player__controller-play:hover,
+.player__controller-play:focus {
     background-image: url('../img/player/play-hover.svg');
 }
 
-.player__icon_next {
+.player__controller-next {
     background-image: url('../img/player/next.svg');
 }
 
-.player__icon_next:hover,
-.player__icon_next:focus {
+.player__controller-next:hover,
+.player__controller-next:focus {
     background-image: url('../img/player/next-hover.svg');
 }
 
-.player__icon_like {
+.player__controller-like {
     background-image: url('../img/player/like-o.svg');
 }
 
-.player__icon_like:hover,
-.player__icon_like:focus {
-    background-image: url('../img/player/like-hover.svg');
+.player__controller-like:hover {
+    filter: drop-shadow(0 0 1px #343434);
 }
 
-.player__icon_like:active {
+.player__controller-like_active {
     background-image: url('../img/player/like-active.svg');
 }
 
@@ -193,16 +192,17 @@
     transition: border .2s ease-in-out;
 }
 
-.player__icon_mute {
+.player__controller-mute {
     background-image: url('../img/player/mute-on.svg');
 }
 
-.player__icon_mute:hover,
-.player__icon_mute:focus {
-    background-image: url('../img/player/mute-hover.svg');
-}
 
-.player__icon_mute-off {
+/* .player__controller-mute:hover,
+.player__controller-mute:focus {
+
+} */
+
+.player__controller-mute-off {
     background-image: url('../img/player/mute-off.svg');
 }
 
