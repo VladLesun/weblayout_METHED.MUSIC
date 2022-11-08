@@ -87,12 +87,11 @@
     background-image: url('../img/player/like-o.svg');
 }
 
-.player__controller-like:hover,
-.player__controller-like:focus {
-    background-image: url('../img/player/like-hover.svg');
+.player__controller-like:hover {
+    filter: drop-shadow(0 0 1px #343434);
 }
 
-.player__controller-like:active {
+.player__controller-like_active {
     background-image: url('../img/player/like-active.svg');
 }
 
@@ -197,10 +196,11 @@
     background-image: url('../img/player/mute-on.svg');
 }
 
-.player__controller-mute:hover,
+
+/* .player__controller-mute:hover,
 .player__controller-mute:focus {
-    background-image: url('../img/player/mute-hover.svg');
-}
+
+} */
 
 .player__controller-mute-off {
     background-image: url('../img/player/mute-off.svg');

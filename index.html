@@ -37,229 +37,26 @@
                 </button>
             </form>
 
-            <button class="header__favorite-btn">
+            <button class="header__favorite-btn header__favorite-btn_like">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" />
                 </svg>
             </button>
+            <button class="header__favorite-btn header__favorite-btn_exit">
+              <span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z"/>
+                  </svg>
+              </span>
+              <span>На главную</span>
+          </button>
         </div>
     </header>
 
     <section class="catalog">
         <h2 class="visually-hidden">Список треков</h2>
 
-        <div class="catalog__container">
-            <button class="catalog__item track" data-track="audio/The Weeknd - Save Your Tears.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo1.jpg"
-                      alt="The weeknd - Save your tears"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Save your tears</p>
-                  <p class="track-info__artist">The weeknd</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Imagine Dragons - Follow You.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo2.jpg"
-                      alt="Imagine Dragons - Follow You"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Follow You</p>
-                  <p class="track-info__artist">Imagine Dragons</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Tove Lo - How Long.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo3.jpg"
-                      alt="Tove Lo - How Long"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">How Long</p>
-                  <p class="track-info__artist">Tove Lo</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Tom Odell - Another Love.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo4.jpg"
-                      alt="Tom Odell - Another Love"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Another Love</p>
-                  <p class="track-info__artist">Tom Odell</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Lana Del Rey - Born To Die.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo5.jpg"
-                      alt="Lana Del Rey - Born To Die"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Born to Die</p>
-                  <p class="track-info__artist">Lana Del Rey</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Adele - Hello.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo6.jpg"
-                      alt="Adele - Hello"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Hello</p>
-                  <p class="track-info__artist">Adele</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Tom Odell - Can't Pretend.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo7.jpg"
-                      alt="Tom Odell - Can't Pretend"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Can't Pretend</p>
-                  <p class="track-info__artist">Tom Odell</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Lana Del Rey - Young And Beautiful.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo8.jpg"
-                      alt="Lana Del Rey - Young And Beautiful"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Young and Beautiful</p>
-                  <p class="track-info__artist">Lana Del Rey</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Adele - Someone Like You.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo9.jpg"
-                      alt="Adele - Someone Like You"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Someone Like You</p>
-                  <p class="track-info__artist">Adele</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Imagine Dragons - Natural.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo10.jpg"
-                      alt="Imagine Dragons - Natural"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Natural</p>
-                  <p class="track-info__artist">Imagine Dragons</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Drake - Laugh Now Cry Later.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo11.jpg"
-                      alt="Drake - Laugh Now Cry Later"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Laugh Now Cry Later</p>
-                  <p class="track-info__artist">Drake</p>
-                </div>
-            </button>
-
-            <button class="catalog__item track" data-track="audio/Madonna - Frozen.mp3">
-                <div class="track__img-wrap">
-                  <img
-                      class="track__poster"
-                      src="./img/track/photo12.jpg"
-                      alt="Madonna - Frozen"
-                      width="180"
-                      height="180"
-                  >
-                </div>
-
-                <div class="track__info track-info">
-                  <p class="track-info__title">Frozen</p>
-                  <p class="track-info__artist">Madonna</p>
-                </div>
-              </button>
-
-            <button class="catalog__btn-add">
-                <span>Увидеть все</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" />
-                </svg>
-              </button>
-        </div>
+        <div class="catalog__container"></div>
     </section>
 
     <section class="player">
@@ -281,7 +78,7 @@
 
             <div class="player__progress-wrap">
                 <div class="player__progress">
-                    <input class="player__progress-input" type="range" min="0" max="100" value="0">
+                    <input class="player__progress-input" type="range" min="0" max="10000" value="0">
                 </div>
 
                 <p class="player__time">

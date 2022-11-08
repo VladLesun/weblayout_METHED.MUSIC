@@ -55,6 +55,7 @@ h2,
 h3,
 p {
     margin: 0;
+    color: #000;
 }
 
 .visually-hidden {
